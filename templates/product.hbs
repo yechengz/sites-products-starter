@@ -19,7 +19,14 @@
         "price",
         "color",
         "brand",
-        "photoGallery"
+        "photoGallery",
+        "c_relatedProducts.name",
+        "c_relatedProducts.slug",
+        "c_relatedProducts.photoGallery",
+        "c_relatedProducts.brand",
+        "c_relatedProducts.price",
+        "c_relatedProducts.color",
+        "c_relatedProducts.richTextDescription"
       ],
       "localization": {
           "locales": ["en"]
@@ -46,8 +53,6 @@
         <div class="w-full">
             <div class="centered-container">
                 {{>navbar}}
-            </div>
-            <div class="centered-container">
                 <div class="section grid gap-y-10 md:grid-cols-2 md:gap-x-10">
                     <div class="">
                         <a href={{this.image.url}}>
@@ -72,18 +77,18 @@
                                 <b>Color:</b> {{color}}
                             </p>
                         </div>
-                        <div class="buttons flex flex-col space-y-5 justify-center w-full px-12">
-                            <button class="product-mainCTA">
+                        <div class="buttons flex flex-col space-y-5 justify-center w-full px-12" data-ya-scope="productCTAs">
+                            <button class="product-mainCTA" data-ya-track="addToBag">
                             Add to Bag
                             </button>
-                            <button class="product-secondaryCTA">
+                            <button class="product-secondaryCTA" data-ya-track="favorite">
                             Favorite
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="w-full bg-gray-50">
             <div class="centered-container">
                 {{>footer}}

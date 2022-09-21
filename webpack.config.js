@@ -6,10 +6,11 @@ module.exports = {
     mode: 'production',
     entry: {
         index: './src/index.js',
-
-      }, 
+        util: "./src/util.js",
+        analytics: "./src/analytics.js"
+      },
     output: {
-        filename: 'index.bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'assets'),
         clean: true
     },
@@ -31,7 +32,7 @@ module.exports = {
                     options: {
                         importLoaders: 1
                     }
-                }, 
+                },
                 'postcss-loader'
             ],
           },
