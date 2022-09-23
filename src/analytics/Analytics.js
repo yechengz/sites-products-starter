@@ -520,7 +520,7 @@ class Analytics {
   pixelURL(optionalData) {
     const combinedData = Object.assign(
       {
-        product: 'storepages',
+        product: 'sites',
         v: this.seed()
       },
       this.siteData,
