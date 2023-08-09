@@ -9,6 +9,7 @@ export async function main() {
         headers: {
             ...CORS_HEADERS,
             "Cache-Control": "no-cache",
+            "Cache-Control": "private",
         },
         body: "test",
     }
