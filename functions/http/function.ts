@@ -8,8 +8,8 @@ export async function main() {
         statusCode: 200,
         headers: {
             ...CORS_HEADERS,
-            "Cache-Control": "no-cache",
             "Cache-Control": "private",
+            "Cache-Control": "no-cache",
         },
         body: "test",
     }
