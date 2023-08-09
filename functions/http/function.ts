@@ -1,4 +1,7 @@
-import { CORS_HEADERS} from "./consts.ts";
+const CORS_HEADERS = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Authorization",
+}
 
 export async function main() {
     return {
