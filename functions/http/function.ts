@@ -8,7 +8,7 @@ export async function main() {
         statusCode: 200,
         headers: {
             ...CORS_HEADERS,
-            "Cache-Control": "max-age=0, must-revalidate",
+            "Cache-Control": "no-cache=fdasfsdfas",
         },
         body: "test",
     }
